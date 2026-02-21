@@ -1,0 +1,11 @@
+#container{
+    display: flex;
+}
+
+#nav {
+    width: 200px;
+    height: 100vh;
+    background-color: #efefef;
+    padding: 20px;
+    box-sizing: border-box;
+}

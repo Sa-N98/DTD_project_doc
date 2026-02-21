@@ -1,0 +1,112 @@
+
+
+/* ===== Base Layout ===== */
+
+#milestone-details {
+    background-color: #ffffff;
+    color: #444444;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    max-width: 900px;
+    margin: 80px auto;
+    margin-top: 100px;
+    padding: 0 2px;
+    line-height: 1.6;
+    background: #ffffff;
+    padding: 60px 60px;
+}
+
+/* ===== Individual Milestone Card ===== */
+
+.milestone-details {
+    padding: 60px 0;
+    border-bottom: 1px solid #efefef;
+}
+
+.milestone-details:last-child {
+    border-bottom: none;
+}
+
+/* ===== Headings ===== */
+
+.milestone-details h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+}
+
+.milestone-details h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 12px;
+}
+
+.milestone-details h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+/* ===== Paragraphs ===== */
+
+.milestone-details p {
+    margin: 6px 0;
+    font-size: 15px;
+}
+
+/* ===== Lists ===== */
+
+.milestone-details ul {
+    margin: 10px 0 20px 20px;
+    padding: 0;
+}
+
+.milestone-details li {
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+/* ===== Horizontal Rule ===== */
+
+.milestone-details hr {
+    border: none;
+    height: 1px;
+    background-color: #efefef;
+    margin: 40px 0;
+}
+
+/* ===== Meta Section (Timeline, Marks, etc.) ===== */
+
+.milestone-meta p {
+    font-size: 14px;
+    color: #444444;
+}
+
+/* ===== Marks Highlight ===== */
+
+.marks {
+    color: #62a509;
+    font-weight: 500;
+}
+
+/* ===== Deadlines ===== */
+
+.milestone-footer strong {
+    color: #c9321f;
+}
+
+/* ===== Important Notes ===== */
+
+.milestone-details em {
+    color: #62a509;
+    font-style: normal;
+    font-weight: 500;
+}
+
+/* ===== Subtle Hover Enhancement (Optional) ===== */
+
+.milestone-details:hover {
+    transition: all 0.3s ease;
+}

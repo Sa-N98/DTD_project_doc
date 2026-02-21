@@ -1,0 +1,112 @@
+body {
+    background-color: #efefef;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+                 "Helvetica Neue", Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+    padding-left: 20px;
+    background-color: #efefef;
+}
+#progress-bar_container {
+    position: relative;
+    width: 98%;
+    height: 7px;
+    background-color: #444444;
+    border-radius: 10px;
+}
+
+#progress-bar {
+    display: flex;
+    justify-content: flex-end;
+    width: 0%;
+    height: 100%;
+    background-color: #62a509;
+    border-radius: 5px;
+    transition: width 0.3s ease-in-out;
+}
+
+#current_time {
+    width: 100px;
+    height: 100%;
+    padding-top: 10px;
+    font-size: 12px;
+    overflow: visible;
+    transform: translate(50%, 0)
+
+}
+
+/* #current_time:hover{
+    content: attr(data-time);
+    display: flex;
+    justify-content: center;
+    overflow: visible;
+} */
+
+
+.milestone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-weight: bold;
+    color: #efefef;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: -8px;
+    box-sizing: border-box;
+    border-radius: 100%;
+    border-style: solid;
+    border-width: 3px;
+    background-color: #444444;  
+    border-color: #efefef;
+    transition: all 0.15s ease-in-out; 
+    transform: translate(-50%, 0)
+}
+
+.milestone:hover {
+    width: 150px;
+    height:60px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#milestone-1 {
+    left: calc(37% - 12.5px)   
+}
+
+#milestone-2 {
+    left: calc(63% - 12.5px)
+}
+
+#milestone-3 {
+    left: calc(100% - 12.5px);
+}
+
+#milestone-1:hover, #milestone-2:hover{
+   transform: translate(-40%,-25%);
+}
+#milestone-3:hover {
+   transform: translate(-80%,-25%);
+}
+
+.milestone p {
+    margin: 0;
+    padding: 0;
+}
+.deadline {
+    margin-top: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    color: #c9321f;
+}
