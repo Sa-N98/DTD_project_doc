@@ -1,173 +1,103 @@
+
+
 /* ===== Base Layout ===== */
 
 #milestone-details {
-    max-width: 1000px;
-    margin: 60px auto;
-    padding: 0 30px;
-    line-height: 1.8;
+    background-color: #ffffff;
+    color: #444444;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    max-width: 900px;
+    margin: 80px auto;
+    margin-top: 100px;
+    padding: 0 2px;
+    line-height: 1.6;
+    background: #ffffff;
+    padding: 60px 60px;
 }
 
 /* ===== Individual Milestone Card ===== */
 
 .milestone-details {
-    background: #ffffff;
-    padding: 60px 50px;
-    margin-bottom: 30px;
-    border-radius: 12px;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    transition: all 0.3s ease;
+    padding: 60px 0;
+    border-bottom: 1px solid #efefef;
 }
 
-.milestone-details:hover {
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-    transform: translateY(-2px);
+.milestone-details:last-child {
+    border-bottom: none;
 }
 
 /* ===== Headings ===== */
 
 .milestone-details h2 {
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 30px;
-    color: #1a2a3a;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
     letter-spacing: -0.5px;
-    padding-bottom: 15px;
-    border-bottom: 3px solid #3498db;
-    display: inline-block;
 }
 
 .milestone-details h3 {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
-    margin-top: 35px;
-    margin-bottom: 15px;
-    color: #2c3e50;
-    position: relative;
-    padding-left: 15px;
-}
-
-.milestone-details h3:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 4px;
-    height: 24px;
-    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
-    border-radius: 2px;
+    margin-top: 40px;
+    margin-bottom: 12px;
 }
 
 .milestone-details h4 {
     font-size: 16px;
     font-weight: 600;
     margin-top: 24px;
-    margin-bottom: 12px;
-    color: #34495e;
+    margin-bottom: 8px;
 }
 
 /* ===== Paragraphs ===== */
 
 .milestone-details p {
-    margin: 10px 0;
+    margin: 6px 0;
     font-size: 15px;
-    color: #555555;
-    line-height: 1.8;
-}
-
-.milestone-details strong {
-    color: #2c3e50;
-    font-weight: 600;
 }
 
 /* ===== Lists ===== */
 
 .milestone-details ul {
-    margin: 15px 0 25px 25px;
+    margin: 10px 0 20px 20px;
     padding: 0;
 }
 
 .milestone-details li {
-    margin-bottom: 10px;
-    font-size: 15px;
-    color: #555555;
-    line-height: 1.6;
-    position: relative;
-}
-
-.milestone-details li:before {
-    content: "•";
-    color: #3498db;
-    font-weight: bold;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
-    margin-right: 0.5em;
+    margin-bottom: 6px;
+    font-size: 14px;
 }
 
 /* ===== Horizontal Rule ===== */
 
 .milestone-details hr {
     border: none;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, #e0e0e0 20%, #e0e0e0 80%, transparent);
-    margin: 35px 0;
-    opacity: 0.6;
+    height: 1px;
+    background-color: #efefef;
+    margin: 40px 0;
 }
 
 /* ===== Meta Section (Timeline, Marks, etc.) ===== */
 
-.milestone-meta {
-    background: linear-gradient(135deg, rgba(52, 152, 219, 0.08) 0%, rgba(41, 128, 185, 0.08) 100%);
-    padding: 20px;
-    border-radius: 8px;
-    border-left: 4px solid #3498db;
-    margin-bottom: 25px;
-}
-
 .milestone-meta p {
-    font-size: 15px;
-    color: #2c3e50;
-    margin: 6px 0;
-    font-weight: 500;
+    font-size: 14px;
+    color: #444444;
 }
 
 /* ===== Marks Highlight ===== */
 
 .marks {
-    background: linear-gradient(135deg, #27ae60 0%, #229954 100%);
-    color: #ffffff;
-    padding: 2px 8px;
-    border-radius: 4px;
-    font-weight: 600;
-    font-size: 14px;
+    color: #62a509;
+    font-weight: 500;
+}
+
+/* ===== Deadlines ===== */
+
+.milestone-footer strong {
+    color: #c9321f;
 }
 
 /* ===== Important Notes ===== */
-
-.milestone-details em {
-    color: #7f8c8d;
-    font-style: italic;
-}
-
-/* ===== Milestone Footer ===== */
-
-.milestone-footer {
-    background: linear-gradient(135deg, rgba(192, 57, 43, 0.08) 0%, rgba(169, 50, 38, 0.08) 100%);
-    padding: 20px;
-    border-radius: 8px;
-    border-left: 4px solid #e74c3c;
-    margin-top: 30px;
-}
-
-.milestone-footer p {
-    color: #c9321f;
-    font-weight: 600;
-    margin: 0;
-}
-    font-style: italic;
-}
 
 .milestone-details em {
     color: #62a509;

@@ -1,3 +1,12 @@
+body {
+    background-color: #efefef;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+                 "Helvetica Neue", Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
 header {
     position: sticky;
     top: 0;
@@ -5,41 +14,15 @@ header {
     width: 100%;
     z-index: 1000;
     box-sizing: border-box;
-    padding: 40px 60px;
-    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    padding-left: 20px;
+    background-color: #efefef;
 }
-
-header h1 {
-    font-size: 36px;
-    font-weight: 700;
-    color: #1a2a3a;
-    margin-bottom: 10px;
-    letter-spacing: -0.5px;
-}
-
-header h5 {
-    font-size: 14px;
-    font-weight: 600;
-    color: #7f8c8d;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 30px;
-}
-
-#progressBar {
-    margin-top: 30px;
-}
-
 #progress-bar_container {
     position: relative;
-    width: 100%;
-    height: 8px;
-    background-color: #e0e0e0;
+    width: 98%;
+    height: 7px;
+    background-color: #444444;
     border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 #progress-bar {
@@ -47,9 +30,9 @@ header h5 {
     justify-content: flex-end;
     width: 0%;
     height: 100%;
-    background: linear-gradient(90deg, #3498db 0%, #2980b9 100%);
-    border-radius: 10px;
-    transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: #62a509;
+    border-radius: 5px;
+    transition: width 0.3s ease-in-out;
 }
 
 #current_time {
@@ -58,57 +41,63 @@ header h5 {
     padding-top: 10px;
     font-size: 12px;
     overflow: visible;
-    transform: translate(50%, 0);
+    transform: translate(50%, 0)
+
 }
+
+/* #current_time:hover{
+    content: attr(data-time);
+    display: flex;
+    justify-content: center;
+    overflow: visible;
+} */
+
 
 .milestone {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    font-weight: 700;
-    color: #ffffff;
+    font-weight: bold;
+    color: #efefef;
     position: absolute;
-    width: 28px;
-    height: 28px;
-    top: -10px;
+    width: 25px;
+    height: 25px;
+    top: -8px;
     box-sizing: border-box;
-    border-radius: 50%;
-    border: 3px solid #ffffff;
-    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
-    transition: all 0.2s ease-in-out;
-    transform: translate(-50%, 0);
-    cursor: pointer;
-    box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3);
+    border-radius: 100%;
+    border-style: solid;
+    border-width: 3px;
+    background-color: #444444;  
+    border-color: #efefef;
+    transition: all 0.15s ease-in-out; 
+    transform: translate(-50%, 0)
 }
 
 .milestone:hover {
-    width: 160px;
-    height: 60px;
-    border-radius: 8px;
-    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
-    box-shadow: 0 8px 16px rgba(52, 152, 219, 0.4);
+    width: 150px;
+    height:60px;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 #milestone-1 {
-    left: calc(37% - 14px);
+    left: calc(37% - 12.5px)   
 }
 
 #milestone-2 {
-    left: calc(63% - 14px);
+    left: calc(63% - 12.5px)
 }
 
 #milestone-3 {
-    left: calc(100% - 14px);
+    left: calc(100% - 12.5px);
 }
 
-#milestone-1:hover, #milestone-2:hover {
-    transform: translate(-40%, -30%);
+#milestone-1:hover, #milestone-2:hover{
+   transform: translate(-40%,-25%);
 }
-
 #milestone-3:hover {
-    transform: translate(-80%, -30%);
-}
+   transform: translate(-80%,-25%);
 }
 
 .milestone p {
