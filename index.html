@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Timeline</title>
+
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      padding: 40px;
+      font-family: Arial;
+    }
+
+    .timeline {
+      position: relative;
+      height: 80vh;
+      width: 6px;
+      background: #ddd;
+    }
+
+    .day {
+        position: absolute;     /* key */
+        left: 50%;              /* move to center line */
+        transform: translateX(-50%); /* perfectly center */
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #f8aa01;
+    }
+
+    .milestone {
+        background: purple;
+        width: 10px;
+        height: 10px;
+        }
+
+    .quiz {
+        background: red;
+        transform: scale(1.6);
+        }
+
+    .milestone::after,
+    .quiz::after {
+    content: attr(data-label);
+    position: absolute;
+    left: 15px;
+    font-size: 12px;
+    white-space: nowrap;
+    }
+
+
+    
+  </style>
+</head>
+
+<body>
+
+  <div class="timeline" id="timeline">
+    
+  </div>
+
+  <script src="scripts/progressbar.js"></script>
+
+</body>
+</html>
