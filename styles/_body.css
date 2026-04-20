@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    background-color: DodgerBlue;
+    flex-wrap: wrap;
+}
+
+.progress_bar{
+  background-color: #f1f1f1;
+  width: 100vw;
+  padding: 50px;
+}
+
+.document{
+    width: 100%;
+    height: 2000px;
+    background-color: #ff5a5a;
+    position: relative;
+}
+
+.milestone {
+    padding: 30px;
+    background-color: aquamarine;
+    margin-bottom: 30px;
+}
+
+.milestone_header {
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color: #fcd535;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.milestone_number{
+    font-size: 67px;
+}
+
+.milestone_description{
+    font-size: 27px;
+}
+
+.m_marks{
+    font-size: 52px;
+}
+.m_weeks{
+    font-size: 25px;
+}
+
