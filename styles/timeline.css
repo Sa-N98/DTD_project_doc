@@ -1,0 +1,12 @@
+#timeline_bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#timeline {
+    width: 2%;
+    height: 90%;
+    border-radius: 100px;
+    background-color: rgb(49, 117, 205);
+}

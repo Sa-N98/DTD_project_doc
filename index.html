@@ -1,66 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Timeline</title>
-
-  <style>
-    body {
-      display: flex;
-      justify-content: center;
-      padding: 40px;
-      font-family: Arial;
-    }
-
-    .timeline {
-      position: relative;
-      height: 85vh;
-      width: 20px;
-      background: #ddd;
-    }
-
-    .day {
-        position: absolute;     /* key */
-        left: 50%;              /* move to center line */
-        transform: translateX(-50%); /* perfectly center */
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        background: #f8aa01;
-    }
-
-    .milestone {
-        background: purple;
-        width: 10px;
-        height: 10px;
-        }
-
-    .quiz {
-        background: red;
-        transform: scale(1.6);
-        }
-
-    .milestone::after,
-    .quiz::after {
-    content: attr(data-label);
-    position: absolute;
-    left: 15px;
-    font-size: 12px;
-    white-space: nowrap;
-    }
-
-
-    
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/timeline.css">
+    <title>Document</title>
 </head>
-
 <body>
+    <div id="top_bar"></div>
+    <div id="flex-container">
 
-  <div class="timeline" id="timeline">
-    
-  </div>
+        <div id="timeline_bar">
+            <div id="timeline"></div>
+        </div>
 
-  <script src="scripts/progressbar.js"></script>
 
+        <div id="main_content"></div>
+    </div>
 </body>
 </html>
