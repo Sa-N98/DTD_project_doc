@@ -27,16 +27,8 @@
 .day {
     width: 1px;
     height: 1px;
-    margin: 1px 0;
+    margin: 0.3vh 0;
     background-color: #222323;
-}
-.course_start {
-    width: 23px;
-    height: 23px;
-    border-radius: 50%;
-    background-color: #f49006;
-    margin: 5px 0;
-    flex-shrink: 0;
 }
 
 .weekend {
@@ -44,6 +36,32 @@
     height: 3px;
     border-radius: 100px;
     background-color: #94a3b8;
-    margin: 6px 0;
+    margin: 0.6vh 0;
     flex-shrink: 0;
+}
+
+.course_start {
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background-color: #f49006;
+    margin: 0 0 0.5vh 0;
+    flex-shrink: 0;
+}
+
+[class^="milestone"] {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: medium;
+    border-color: #d3d3d3;
+    background-color: #22c55e;
+    margin: 4.5vh 0;
+    flex-shrink: 0;
+}
+
+.milestone-3 {
+    margin-top: 5.4vh;
+    margin-bottom: 0;
 }
