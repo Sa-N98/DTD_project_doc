@@ -90,5 +90,22 @@
 }
 
 .label-milestone, .label-week {
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.day.completed {
+    background-color: #F58D26 !important;
+}
+
+.weekend.completed {
+    background-color: #F58D26 !important;
+}
+
+[class^="milestone"].completed {
+    background-color: #F58D26 !important;
+}
+
+.completed .label-week,
+.completed .label-milestone {
+    color: #F58D26;
 }
