@@ -1,65 +1,19 @@
 const pogressBar = document.getElementById('pogress_bar');
 
-function updatePogressBar(date = new Date()) {
-    const today = date;
-    const startDate = new Date("2025-09-21");
-    const endDate = new Date("2025-12-03");
+let today = new Date().toISOString().split("T")[0];
 
-    if (today < startDate) {
-        pogressBar.style.height = '0%';
-    } else if (today > endDate) {
-        pogressBar.style.height = '100%';
-    } else {
-        const totalDuration = endDate - startDate;
-        const elapsedDuration = today - startDate;
-        const progressPercentage = (elapsedDuration / totalDuration) * 100;
-        pogressBar.style.height = `${progressPercentage}%`;
-    }
+console.log("Today's date:", today);
 
-    // Update timeline element colors
-    const todayStr = today.toISOString().split("T")[0];
-    document.querySelectorAll('.day').forEach(el => {
-        const elementDate = el.dataset.date;
-        if (elementDate && elementDate <= todayStr) {
-            el.classList.add('completed');
-        } else {
-            el.classList.remove('completed');
-        }
-    });
+today = '2026-06-18' // For testing purposes, you can set this to a specific date in the course timeline
+
+const todayElement = document.querySelector(`.day[data-date="${today}"]`);
+if (todayElement) {
+    const timelineRect = document.getElementById('timeline').getBoundingClientRect();
+    const todayRect = todayElement.getBoundingClientRect();
+    pogressBar.style.height = `${(todayRect.top - timelineRect.top) + (todayRect.height / 2)}px`;
+
+    todayElement.style.backgroundColor = '#ff6347'; // Highlight today's date
 }
-
-// Test trigger for the console
-window.simulateDate = (dateStr) => {
-    console.log(`Simulating date: ${dateStr}`);
-    updatePogressBar(new Date(dateStr));
-};
-
-// Animation trigger for the console
-window.animateProgressBar = () => {
-    const startDate = new Date("2025-09-21");
-    const endDate = new Date("2025-12-03");
-    const totalDuration = endDate - startDate;
-
-    let start = Date.now();
-    const duration = 100000; // 10 seconds animation
-
-    function step() {
-        let now = Date.now();
-        let progress = (now - start) / duration;
-        if (progress > 1) progress = 1;
-
-        const simulatedDate = new Date(startDate.getTime() + (progress * totalDuration));
-        updatePogressBar(simulatedDate);
-
-        if (progress < 1) {
-            requestAnimationFrame(step);
-        }
-    }
-    requestAnimationFrame(step);
-};
-
-// Initial update
-updatePogressBar();
-
-// Update every day at midnight
-setInterval(updatePogressBar, 24 * 60 * 60 * 1000); 
+else {
+    console.warn("Today's date does not match any element in the timeline.");
+}

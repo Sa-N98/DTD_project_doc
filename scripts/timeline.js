@@ -1,9 +1,9 @@
 import { getDays } from "./utils.js";
 
 const COURSE_CONFIG = {
-    start: "2025-09-21",
-    end: "2025-12-03",
-    milestones: ["2025-10-14", "2025-11-05", "2025-12-03"]
+    start: "2026-06-12",
+    end: "2026-08-24",
+    milestones: ["2026-07-05", "2026-07-27", "2026-08-24"]
 };
 
 const timeline = document.getElementById("timeline");
