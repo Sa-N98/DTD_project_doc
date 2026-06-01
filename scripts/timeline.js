@@ -7,9 +7,12 @@ const COURSE_CONFIG = {
 };
 
 const timeline = document.getElementById("timeline");
+const headerDates = document.getElementsByClassName("header-dates")[0];
 const startDate = new Date(COURSE_CONFIG.start);
 const days = getDays(COURSE_CONFIG.start, COURSE_CONFIG.end);
 let milestoneCounter = 1;
+
+
 
 for (let i = 0; i <= days; i++) {
     const dayElement = document.createElement("div");
