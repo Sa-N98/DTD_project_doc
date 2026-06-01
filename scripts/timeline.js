@@ -12,6 +12,7 @@ const startDate = new Date(COURSE_CONFIG.start);
 const days = getDays(COURSE_CONFIG.start, COURSE_CONFIG.end);
 let milestoneCounter = 1;
 
+headerDates.textContent = `${startDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric' , year: 'numeric' })} – ${new Date(COURSE_CONFIG.end).toLocaleDateString('en-US', { month: 'short', day: 'numeric' , year: 'numeric' })}`;
 
 
 for (let i = 0; i <= days; i++) {
