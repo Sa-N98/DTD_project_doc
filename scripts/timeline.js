@@ -29,6 +29,7 @@ for (let i = 0; i <= days; i++) {
 
         let milestoneLabel = document.createElement("span");
         milestoneLabel.classList.add("label-milestone");
+        milestoneLabel.id = `milestone-${milestoneCounter}`;
         milestoneLabel.textContent = `Milestone ${milestoneCounter}`;
         dayElement.appendChild(milestoneLabel);
         milestoneCounter++;
@@ -46,5 +47,3 @@ for (let i = 0; i <= days; i++) {
 
     timeline.appendChild(dayElement);
 }
-
-
