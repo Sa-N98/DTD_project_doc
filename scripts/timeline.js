@@ -1,10 +1,6 @@
 import { getDays } from "./utils.js";
+import { COURSE_CONFIG } from "./utils.js";
 
-const COURSE_CONFIG = {
-    start: "2026-06-12",
-    end: "2026-08-24",
-    milestones: ["2026-07-05", "2026-07-27", "2026-08-24"]
-};
 
 const timeline = document.getElementById("timeline");
 const headerDates = document.getElementsByClassName("header-dates")[0];
