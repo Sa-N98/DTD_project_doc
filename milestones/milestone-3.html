@@ -1,0 +1,97 @@
+<style>
+:root{--pg-orange:#F58D26;--pg-orange-light:#fff7ee;--pg-orange-mid:#ffe8cc;--pg-orange-dark:#c0620d;--pg-text-primary:#111827;--pg-text-secondary:#191b20;--pg-text-tertiary:#5f646d;--pg-border:#e5e7eb;--pg-border-light:#f3f4f6;--pg-bg:#ffffff;--pg-bg-soft:#f9fafb;--pg-radius:12px;--pg-radius-sm:8px;--pg-shadow:0 1px 3px rgba(0,0,0,0.06),0 4px 16px rgba(0,0,0,0.04)}
+*{box-sizing:border-box;margin:0;padding:0}
+a{text-decoration:none;color:inherit}
+.page{padding:2rem 2rem 3rem;font-family:'Segoe UI',system-ui,sans-serif;color:var(--pg-text-primary);max-width:860px}
+.hero-section{margin-bottom:1.75rem}
+.hero-tags{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.course-tag{font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--pg-orange-dark);background:var(--pg-orange-light);border:1px solid var(--pg-orange-mid);border-radius:999px;padding:2px 10px}
+.term-tag{font-size:11px;color:var(--pg-text-tertiary);background:var(--pg-bg-secondary);border:1px solid var(--pg-border-light);border-radius:999px;padding:2px 10px}
+.hero-title{font-size:3rem;font-weight:700;color:var(--pg-text-primary);line-height:1.15;margin:0 0 6px}
+.description{font-size:14px;color:var(--pg-text-secondary);line-height:1.5;max-width:600px}
+.hero-pills{display:flex;gap:0.7rem;margin-top:12px;flex-wrap:wrap}
+.h-pill{display:flex;align-items:center;gap:5px;font-size:12px;color:var(--pg-text-secondary);background:var(--pg-bg-soft);border:1px solid var(--pg-border);border-radius:999px;padding:3px 12px}
+.h-pill i{font-size:13px;color:var(--pg-orange)}
+.h-pill strong{color:var(--pg-text-primary);font-weight:500}
+.sec-label{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#ff6447;margin-bottom:.75rem}
+.info-box{background:var(--pg-bg-soft);border:1px solid var(--pg-border);border-radius:var(--pg-radius-sm);padding:.75rem 1rem;font-size:14px;color:var(--pg-text-secondary);line-height:1.6;margin-bottom:1rem; margin-top:1rem}
+.steps-grid, .grade-grid, .tools-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:.75rem;margin-bottom:1.25rem}
+.step-card, .g-card, .t-card{border:1px solid var(--pg-border);border-radius:var(--pg-radius);padding:1rem;background:var(--pg-bg);transition:box-shadow .15s,border-color .15s;display:block;cursor:pointer}
+.step-card:hover, .g-card:hover, .t-card:hover{box-shadow:var(--pg-shadow);border-color:var(--pg-orange)}
+.step-icon, .t-icon{width:34px;height:34px;border-radius:9px;background:var(--pg-orange-light);border:1px solid var(--pg-orange-mid);display:flex;align-items:center;justify-content:center;margin-bottom:.65rem}
+.step-icon i, .t-icon i{font-size:16px;color:var(--pg-orange)}
+.step-title, .t-name{font-size:13px;font-weight:600;color:var(--pg-text-primary);margin-bottom:2px}
+.step-desc, .g-label, .t-sub, .g-note{font-size:11px;color:var(--pg-text-tertiary)}
+.warn{display:flex;gap:10px;align-items:flex-start;background:#fffbeb;border:1px solid #fde68a;border-radius:var(--pg-radius-sm);padding:.75rem 1rem;font-size:13px;color:#92400e;line-height:1.55;margin-bottom:1rem}
+.warn i{font-size:15px;color:#f59e0b;margin-top:1px;flex-shrink:0}
+nav{
+    display:flex;
+    gap:.5rem;
+    margin-bottom:1.5rem;
+    border-bottom:1px solid var(--pg-border);
+    padding-bottom:.75rem;
+}
+
+.nav-btn{
+    border:1px solid transparent;
+    background:transparent;
+    color:var(--pg-text-secondary);
+    font-size:13px;
+    font-weight:500;
+    padding:.5rem .9rem;
+    border-radius:999px;
+    cursor:pointer;
+    transition:all .15s ease;
+}
+
+.nav-btn:hover{
+    background:var(--pg-orange-light);
+    color:var(--pg-orange-dark);
+}
+
+.nav-btn.active{
+    background:var(--pg-orange-light);
+    border-color:var(--pg-orange-mid);
+    color:var(--pg-orange-dark);
+}
+
+.step-num{
+    font-size:11px;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:.06em;
+    color:var(--pg-orange);
+    margin-bottom:.25rem;
+}
+
+.warn-stack{
+    display:flex;
+    flex-direction:column;
+}
+
+.g-card{
+    text-align:center;
+}
+
+.g-pct{
+    font-size:1.75rem;
+    line-height:1;
+    font-weight:700;
+    color:var(--pg-orange);
+    margin-bottom:.5rem;
+}
+
+.t-req{
+    color:var(--pg-orange-dark);
+    font-weight:600;
+}
+section{margin-bottom:1.75rem}
+section {display: none;}
+section.active {display: block;}
+</style>
+
+
+<div class="page milestone-3">
+    <h1>Milestone 3: Implementation and testing</h1>
+    <p >In this milestone, you will submit the implementation of your project along with a testing report that demonstrates the functionality and performance of your solution. This will help us evaluate the effectiveness of your implementation and provide feedback for improvement.</p>
+</div>

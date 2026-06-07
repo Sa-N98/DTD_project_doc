@@ -4,6 +4,7 @@
     align-items: center;
     border-right: 1px solid #e5e7eb;
     flex-direction: column;
+    font-family: 'Segoe UI', system-ui, sans-serif;
 }
 
 .header-label {

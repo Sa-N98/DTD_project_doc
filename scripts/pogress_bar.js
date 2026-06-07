@@ -15,6 +15,7 @@ function updateTimeline(today) {
             el.style.backgroundColor = '#ff6347';
             el.querySelectorAll('span').forEach(span => {
                 span.style.color = '#F58D26';
+                span.style.fontWeight = 'bold';
             });
         }
     });
