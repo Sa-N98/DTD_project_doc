@@ -1,7 +1,8 @@
+<style>
 :root{--pg-orange:#F58D26;--pg-orange-light:#fff7ee;--pg-orange-mid:#ffe8cc;--pg-orange-dark:#c0620d;--pg-text-primary:#111827;--pg-text-secondary:#191b20;--pg-text-tertiary:#5f646d;--pg-border:#e5e7eb;--pg-border-light:#f3f4f6;--pg-bg:#ffffff;--pg-bg-soft:#f9fafb;--pg-radius:12px;--pg-radius-sm:8px;--pg-shadow:0 1px 3px rgba(0,0,0,0.06),0 4px 16px rgba(0,0,0,0.04)}
 *{box-sizing:border-box;margin:0;padding:0}
 a{text-decoration:none;color:inherit}
-.page{padding:2rem 2rem 3rem;font-family:'Segoe UI',system-ui,sans-serif;color:var(--pg-text-primary);}
+.page{padding:2rem 2rem 3rem;font-family:'Segoe UI',system-ui,sans-serif;color:var(--pg-text-primary);max-width:860px}
 .hero-section{margin-bottom:1.75rem}
 .hero-tags{display:flex;align-items:center;gap:8px;margin-bottom:6px}
 .page-tag-primary{font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--pg-orange-dark);background:var(--pg-orange-light);border:1px solid var(--pg-orange-mid);border-radius:999px;padding:2px 10px}
@@ -75,18 +76,45 @@ nav{display:flex;gap:.5rem;margin-bottom:1.5rem;border-bottom:1px solid var(--pg
 .t-req{color:var(--pg-orange-dark);font-weight:600}
 section{margin-bottom:1.75rem;display:none}
 section.active{display:block}
-.resource-panel{display:flex;align-items:center;gap:12px;padding:.7rem 1.25rem;background:#fff7ee;border-top:1px solid #ffe8cc}
-.resource-panel-label{font-size:11px;font-weight:600;color:#c0620d;text-transform:uppercase;letter-spacing:.06em;white-space:nowrap;flex-shrink:0}
-.resource-panel-links{display:flex;align-items:center;flex-wrap:wrap;flex:1}
-.resource-link{display:inline-flex;align-items:center;gap:5px;font-size:12.5px;color:#c0620d;font-weight:500;cursor:pointer;padding:0 10px;border-right:1px solid #fcd9a8;text-decoration:none}
-.resource-link:first-child{padding-left:0}
-.resource-link:last-child{border-right:none}
-.resource-link:hover{text-decoration:underline}
-.resource-link i{font-size:12px}
-.resource-panel-count{font-size:10px;color:#9ca3af;margin-left:auto;flex-shrink:0;white-space:nowrap}
+</style>
 
-.doc-container{display:flex;flex-direction:row;gap:1.75rem}
-.doc-checklist{width:85%;}
-.doc-checklist.content{width:60%; max-width:600px}
-.doc-content{display:none}
-.doc-content.content{display:block; background-color: #1d4ed8;width:40%;}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+
+<div class="page" id="Dday-1">
+  <div class="hero-section">
+    <div class="hero-tags">
+      <span class="page-tag-primary">Milestone 0</span>
+      <span class="page-tag-secondary">Week 1</span>
+    </div>
+    <div class="hero-title">Team Formation &amp;<br><span style="color:#ff6447;"></span><!-- Title of milestone--></div>
+    <div class="description"><!-- description of milestone--></div>
+    <div class="hero-pills">
+      <div class="h-pill"><i class="ti ti-calendar" aria-hidden="true"></i><span>Week <strong> <!-- --></strong></span></div>
+      <div class="h-pill"><i class="ti ti-award" aria-hidden="true"></i><span>Total: <strong> <!-- --></strong></span></div>
+      <div class="h-pill"><i class="ti ti-users" aria-hidden="true"></i><span>Scope: <strong><!-- --></strong></span></div>
+    </div>
+  </div>
+
+  <!-- MODIFIED: removed duplicate class names, each section is just <section> -->
+  <section class="active">
+    <div class="ter-label">Deliverable 1</div>
+    <div class="check-box">
+      <!-- MODIFIED: onclick moved off .main-task div, now only on .task-toggle -->
+      <div class="main-task open">
+        <div class="task-toggle" onclick="this.closest('.main-task').classList.toggle('open')"></div>
+        <!-- MODIFIED: removed onclick="event.stopPropagation()" from label — no longer needed -->
+        <label><input type="checkbox" id="task1"> <!-- --></label>
+        <div class="scope-pill">Team</div>
+        <div class="marks-pill">1 mark</div>
+      </div>
+      <div class="sub-task">
+        <div class="sub-task-item"><input type="checkbox" id="task1-1"><span> <!-- --> </span></div>
+        
+    </div>
+    <div class="warn">
+      <i class="ti ti-alert-triangle" aria-hidden="true"></i>
+      <span>If teams are not formed by the end of this milestone, the course team will allocate members. Incomplete teams face a <strong>1-mark penalty</strong> on this milestone.</span>
+    </div>
+  </section>
+
+</div>

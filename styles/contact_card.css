@@ -1,0 +1,178 @@
+#contacts_btn {
+    position: absolute;
+    right: 20px;
+    margin-top: 8px;
+}
+
+/* ── Trigger button ── */
+.contacts-trigger {
+    font-size: 13px;
+    font-weight: 500;
+    color: #6b7280;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 999px;
+    padding: 5px 14px 5px 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: background 0.15s, border-color 0.15s, color 0.15s;
+    user-select: none;
+}
+
+.contacts-trigger .btn-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #fff7ee;
+    border: 1px solid #fde3bc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: background 0.15s, border-color 0.15s;
+}
+
+.contacts-trigger .btn-icon i {
+    font-size: 13px;
+    color: #F58D26;
+    transition: color 0.15s;
+}
+
+.contacts-trigger:hover {
+    background: #fff7ee;
+    border-color: #F58D26;
+    color: #F58D26;
+}
+
+.contacts-trigger:hover .btn-icon {
+    background: #ffe8cc;
+    border-color: #F58D26;
+}
+
+.contacts-trigger.open {
+    background: #F58D26;
+    border-color: #F58D26;
+    color: #fff;
+}
+
+.contacts-trigger.open .btn-icon {
+    background: rgba(255,255,255,0.2);
+    border-color: rgba(255,255,255,0.35);
+}
+
+.contacts-trigger.open .btn-icon i {
+    color: #fff;
+}
+
+/* ── Popup card ── */
+.popup_card {
+    display: none;
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    z-index: 200;
+    width: 320px;
+    background: #fff;
+    border: 0.5px solid #e5e7eb;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+}
+
+.popup_card.visible {
+    display: block;
+}
+
+/* ── Card internals ── */
+.card-a-head {
+    padding: 1rem 1.25rem;
+    border-bottom: 0.5px solid #f3f4f6;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-a-head i {
+    font-size: 18px;
+    color: #F58D26;
+}
+
+.card-a-head h3 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #111827;
+}
+
+.card-a-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: .75rem 1.25rem;
+    border-left: 3px solid transparent;
+    transition: border-color 0.15s, background 0.15s;
+}
+
+.card-a-row:hover {
+    background: #fafafa;
+    border-left-color: #F58D26;
+}
+
+.card-a-row + .card-a-row {
+    border-top: 0.5px solid #f3f4f6;
+}
+
+.avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 500;
+    flex-shrink: 0;
+}
+
+.av-orange { background: #fff0e0; color: #c0620d; }
+.av-gray   { background: #f3f4f6; color: #6b7280; }
+
+.card-a-row-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.card-a-row-info p {
+    font-size: 13px;
+    font-weight: 500;
+    color: #111827;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-a-row-info span {
+    font-size: 11px;
+    color: #9ca3af;
+}
+
+.card-a-row a {
+    font-size: 12px;
+    color: #F58D26;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+.card-a-row a:hover {
+    text-decoration: underline;
+}
+
+.divider-label {
+    font-size: 11px;
+    color: #9ca3af;
+    padding: .5rem 1.25rem;
+    background: #f9fafb;
+    border-top: 0.5px solid #f3f4f6;
+    border-bottom: 0.5px solid #f3f4f6;
+}

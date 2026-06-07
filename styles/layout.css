@@ -27,14 +27,15 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; }
 
 #top_bar {
     height: 7vh;
-    max-height: 52px;
+    max-height: 56px;
     background-color: #FFFFFF;
     border-bottom: 1px solid #e5e7eb;
     display: flex;
-    align-items: center;
+    flex-direction: row;   
     padding: 0 20px;
     gap: 12px;
 }
+
 
 #flex-container {
     display: flex;
@@ -51,4 +52,5 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; }
     flex: 1;                  
     height: 100%;             
     background-color: #f9fafb;
+    overflow-y: scroll;
 }

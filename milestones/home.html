@@ -1,155 +1,125 @@
-<style>
-.page{padding:2rem 1.75rem;font-family:'Segoe UI',system-ui,sans-serif;color:var(--color-text-primary)}
-.ms-hero h1{font-size:3.5rem;font-weight:600;color:var(--color-text-primary);line-height:1.1;margin:0 0 4px}
-.ms-hero-sub{display:flex;align-items:center;gap:8px;margin-bottom:1.25rem}
-.ms-hero-sub span{font-size:15px;font-weight:500;color:var(--color-text-secondary)}
-.ms-week-tag{font-size:12px!important;font-weight:400!important;color:var(--color-text-tertiary)!important}
-.ms-meta{display:flex;gap:1.5rem;margin-bottom:1.5rem;flex-wrap:wrap}
-.ms-meta-item{font-size:13px;color:var(--color-text-secondary)}
-.ms-meta-item strong{color:#F58D26;font-weight:500}
-.ms-tabs{display:flex;gap:6px;margin-bottom:1.5rem;flex-wrap:wrap}
-.ms-tab{padding:5px 16px;border-radius:999px;font-size:13px;cursor:pointer;border:1px solid var(--color-border-tertiary);color:var(--color-text-secondary);background:var(--color-background-primary);transition:background .15s,color .15s,border-color .15s}
-.ms-tab:hover{background:#fff7ee;border-color:#F58D26;color:#F58D26}
-.ms-tab.active{background:#F58D26;color:#fff;border-color:#F58D26}
-.ms-task{display:none}.ms-task.visible{display:block}
-.ms-task-header{display:flex;align-items:flex-start;gap:12px;margin-bottom:14px}
-.ms-task-title{font-size:15px;font-weight:600;color:var(--color-text-primary);line-height:1.4;padding-top:2px}
-.ms-subtasks{display:flex;flex-direction:column;gap:10px;padding-left:8px}
-.ms-subtask{display:flex;align-items:flex-start;gap:12px}
-.ms-subtask span{font-size:13px;color:var(--color-text-secondary);line-height:1.55}
-.ms-check{flex-shrink:0;cursor:pointer;border-radius:5px;border:1.5px solid var(--color-border-secondary);background:var(--color-background-primary);transition:background .15s,border-color .15s;position:relative}
-.ms-check[data-level="main"]{width:22px;height:22px;border-radius:6px;margin-top:1px}
-.ms-check[data-level="sub"]{width:18px;height:18px;margin-top:2px}
-.ms-check.checked{background:#F58D26;border-color:#F58D26}
-.ms-check.checked::after{content:'';position:absolute;top:50%;left:50%;width:5px;height:9px;border-right:2px solid #fff;border-bottom:2px solid #fff;transform:translate(-50%,-60%) rotate(45deg)}
-.ms-check[data-level="sub"].checked::after{width:4px;height:7px}
-.divider{border:none;border-top:0.5px solid var(--color-border-tertiary);margin:1.25rem 0}
-.info-box{background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:.85rem 1rem;margin-bottom:1.25rem}
-.info-box p{font-size:13px;color:var(--color-text-secondary);margin:0;line-height:1.6}
-.info-box p+p{margin-top:.4rem}
-.pill{display:inline-block;padding:2px 10px;border-radius:999px;font-size:11px;font-weight:500}
-.pill-orange{background:#fff0e0;color:#c0620d}
-.pill-gray{background:var(--color-background-secondary);color:var(--color-text-secondary)}
-.table-wrap{border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-md);overflow:hidden;margin-bottom:1.25rem}
-table{width:100%;font-size:13px;border-collapse:collapse}
-thead tr{background:var(--color-background-secondary)}
-th{padding:8px 12px;text-align:left;font-weight:500;color:var(--color-text-secondary);border-bottom:0.5px solid var(--color-border-tertiary)}
-td{padding:8px 12px;color:var(--color-text-primary);border-bottom:0.5px solid var(--color-border-tertiary)}
-tr:last-child td{border-bottom:none}
-td.mark{color:#F58D26;font-weight:500}
-.contact-row{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--color-text-secondary);margin-bottom:6px}
-.contact-row i{font-size:15px;color:#F58D26}
-a{color:#F58D26;text-decoration:none}
-a:hover{text-decoration:underline}
-</style>
+<div class="page" id="home">
+  <div class="hero-section">
 
-<div class="page">
-  <h2 class="sr-only">DTD-DAD Course Quick Reference — IIT Madras</h2>
+    <div class="hero-tags">
+      <span class="page-tag-primary">DTD-DAD</span>
+      <span class="page-tag-secondary">IIT Madras · Sep–Dec 2025</span>
+    </div>
 
-  <div class="ms-hero">
-    <h1>DTD-DAD</h1>
-  </div>
-  <div class="ms-hero-sub">
-    <span>Design Thinking for Data-Driven App Development</span>
-    <span class="ms-week-tag">IIT Madras · Sep–Dec 2025</span>
-  </div>
+    <div class="hero-title">Design Thinking for<br><span style="color: #ff6447;">Data-Driven App Development</span></div>
+    <div class="description">A project-based course where you identify a real user problem, apply the KDT-EAST design thinking framework, and build a working app prototype — from empathize to launch.</div>
 
-  <div class="ms-meta">
-    <div class="ms-meta-item"><strong>Credits</strong> 4 (BS) / 12 (BTech)</div>
-    <div class="ms-meta-item"><strong>Instructor</strong> Shyam Anand</div>
-    <div class="ms-meta-item"><strong>TA</strong> Saranya Nayak</div>
-    <div class="ms-meta-item"><strong>Type</strong> Mandatory</div>
-  </div>
+    <div class="hero-pills">
+      <div class="h-pill"><i class="ti ti-award" aria-hidden="true"></i><span>Credits: <strong>4 (BS) / 12 (BTech)</strong></span></div>
+      <div class="h-pill"><i class="ti ti-users" aria-hidden="true"></i><span>Team size: <strong>4 members</strong></span></div>
+      <div class="h-pill"><i class="ti ti-calendar" aria-hidden="true"></i><span>Duration: <strong>Weeks 1–10</strong></span></div>
+      <div class="h-pill"><i class="ti ti-clipboard-check" aria-hidden="true"></i><span>Project weight: <strong>40% of final grade</strong></span></div>
+    </div>
+   </div>
 
-  <div class="ms-tabs" id="tabs">
-    <div class="ms-tab active" data-tab="overview">Overview</div>
-    <div class="ms-tab" data-tab="grading">Grading</div>
-    <div class="ms-tab" data-tab="tools">Tools</div>
-    <div class="ms-tab" data-tab="contacts">Contacts</div>
-  </div>
+  <nav>
+    <button class="nav-btn active" data-target="overview">Overview</button>
+    <button class="nav-btn" data-target="grading">Grading</button>
+    <button class="nav-btn" data-target="resources">Resources</button>
+  </nav>
 
   <!-- OVERVIEW -->
-  <div class="ms-task visible" id="tab-overview">
+  <section class="overview active">
+    
+    <h2 >Course overview</h2>
     <div class="info-box">
-      <p>Develop a user-centric strategy using Design Thinking and build an app/website that is user-desirable, business-viable, and technically feasible. Work in teams of four.</p>
+      <p>This course equips you with the skills and mindset of a design thinker, enabling you to create impactful, user-centered
+         solutions to real-world problems. Through a series of milestones, you'll apply the KDT-EAST framework to identify a 
+         problem, empathize with users, ideate solutions, prototype an app, and test it with real users.</p>
+      <br>
+      <p>By the end of the course, you'll have a working prototype that addresses a genuine user need, along with experience navigating the full design thinking process.</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-icon"><i class="ti ti-search" aria-hidden="true"></i></div>
+        <div class="step-num">Step 1</div>
+        <div class="step-title">Identify</div>
+        <div class="step-desc">Find a real user problem through interviews, personas, and customer journey maps.</div>
+      </div>
+      <div class="step-card">
+        <div class="step-icon"><i class="ti ti-palette" aria-hidden="true"></i></div>
+        <div class="step-num">Step 2</div>
+        <div class="step-title">Design</div>
+        <div class="step-desc">Apply KDT-EAST — analyze root causes, brainstorm ideas, and wireframe your solution.</div>
+      </div>
+      <div class="step-card">
+        <div class="step-icon"><i class="ti ti-device-mobile" aria-hidden="true"></i></div>
+        <div class="step-num">Step 3</div>
+        <div class="step-title">Build & Launch</div>
+        <div class="step-desc">Develop a working app prototype, test with users, and pitch your product.</div>
+      </div>
     </div>
 
-    <div class="ms-task-header">
-      <div class="ms-check checked" data-level="main"></div>
-      <div class="ms-task-title">Core Requirements</div>
+    <div class="sec-label"><h2>Important rules</h2></div>
+    <div class="warn-stack">
+      <div class="warn"><i class="ti ti-alert-triangle" aria-hidden="true"></i><span>Milestone deadlines will <strong>not be extended</strong>. Plan ahead — late submissions are not accepted.</span></div>
+      <div class="warn"><i class="ti ti-alert-triangle" aria-hidden="true"></i><span>Teams not formed on time will be <strong>allocated by the course team</strong> with a 1-mark penalty.</span></div>
+      <div class="warn"><i class="ti ti-alert-triangle" aria-hidden="true"></i><span>Existing solutions identified in GP0 <strong>cannot be cloned</strong> as your GP3 solution.</span></div>
+      <div class="warn"><i class="ti ti-alert-triangle" aria-hidden="true"></i><span>Team members <strong>cannot be counted</strong> as users or customers in any interview or test phase.</span></div>
     </div>
-    <div class="ms-subtasks" style="margin-bottom:1.25rem">
-      <div class="ms-subtask">
-        <div class="ms-check" data-level="sub"></div>
-        <span>Form a team of 4 by Week 1 and lock in your sector.</span>
-      </div>
-      <div class="ms-subtask">
-        <div class="ms-check" data-level="sub"></div>
-        <span>Eligibility: Score &ge; 40/50 avg across best 5 of 7 weekly quizzes.</span>
-      </div>
-      <div class="ms-subtask">
-        <div class="ms-check" data-level="sub"></div>
-        <span>Interview &ge; 4 real target users (team members cannot be users).</span>
-      </div>
-      <div class="ms-subtask">
-        <div class="ms-check" data-level="sub"></div>
-        <span>Milestone deadlines will NOT be extended.</span>
-      </div>
-    </div>
-  </div>
+  </section>
 
   <!-- GRADING -->
-  <div class="ms-task" id="tab-grading">
-    <div class="info-box">
-      <p><strong style="color:var(--color-text-primary)">Final score formula:</strong></p>
-      <p style="font-family:monospace;font-size:14px;color:var(--color-text-primary)">F = 0.1 &times; Quiz + 0.5 &times; End-term exam + 0.4 &times; Project</p>
-    </div>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>Component</th><th>Weight</th><th>Notes</th></tr></thead>
-        <tbody>
-          <tr><td>Weekly quizzes</td><td class="mark">10%</td><td>Best 5 of 7</td></tr>
-          <tr><td>End-term exam</td><td class="mark">50%</td><td>In-person, weeks 1–12</td></tr>
-          <tr><td>Project (GP0–GP3)</td><td class="mark">40%</td><td>Must score > 40/100</td></tr>
-        </tbody>
-      </table>
-    </div>
+  <section class="grading">
+
+  <h2>Score calculation</h2>
+
+  <div class="info-box">
+    <strong>Total Score = &ensp; 10% Assignments&emsp;+&emsp;20% Quiz 2&emsp;+&emsp;30% Final Exam&emsp;+&emsp;40% Project Milestones</strong>
   </div>
 
-  <!-- TOOLS -->
-  <div class="ms-task" id="tab-tools">
-    <div class="info-box"><p>Free versions of these tools are sufficient.</p></div>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>Purpose</th><th>Recommended</th><th>Alternatives</th></tr></thead>
-        <tbody>
-          <tr><td>Management</td><td>Jira</td><td>Asana, Trello</td></tr>
-          <tr><td>UX / Prototype</td><td>Figma</td><td>Whimsical, Adobe XD</td></tr>
-          <tr><td>Empathy maps</td><td>Plum (Canva)</td><td>Equivalent</td></tr>
-          <tr><td>Website</td><td>Webflow</td><td>Wix</td></tr>
-          <tr><td>Presentation</td><td>Google Slides</td><td>Canva, PPT</td></tr>
-        </tbody>
-      </table>
+  <div class="grade-grid">
+
+    <div class="g-card">
+      <div class="g-pct">10%</div>
+      <div class="g-label">Assignments</div>
+      <div class="g-note">Average of the first 10 graded assignments</div>
     </div>
-    <div class="ms-task-header" style="margin-top:.5rem">
-      <div class="ms-check" data-level="main"></div>
-      <div class="ms-task-title">Resources</div>
+
+    <div class="g-card">
+      <div class="g-pct">20%</div>
+      <div class="g-label">Quiz 2</div>
+      <div class="g-note">Mid-term assessment</div>
     </div>
-    <div class="ms-subtasks">
-      <div class="ms-subtask"><div class="ms-check" data-level="sub"></div><span><em>Kantin: Design Thinking</em> — Dr. Bala Ramadurai</span></div>
-      <div class="ms-subtask"><div class="ms-check" data-level="sub"></div><span><em>The Design of Everyday Things</em> — Don Norman</span></div>
+
+    <div class="g-card">
+      <div class="g-pct">30%</div>
+      <div class="g-label">Final Exam</div>
+      <div class="g-note">Covers Weeks 1–12</div>
     </div>
+
+    <div class="g-card">
+      <div class="g-pct">40%</div>
+      <div class="g-label">Project Milestones</div>
+      <div class="g-note">Milestones 0–3 completed as a team</div>
+    </div>
+
   </div>
 
-  <!-- CONTACTS -->
-  <div class="ms-task" id="tab-contacts">
-    <div class="info-box">
-      <p>Course Team contacts.</p>
-    </div>
-    <p style="font-size:13px;font-weight:500;color:var(--color-text-secondary);margin:0 0 10px">Direct Contacts</p>
-    <div class="contact-row"><i class="ti ti-user"></i><span>Instructor — Shyam Anand <a href="mailto:shyam@study.iitm.ac.in">shyam@study.iitm.ac.in</a></span></div>
-    <div class="contact-row"><i class="ti ti-user"></i><span>TA — Saranya Nayak <a href="mailto:21f005170@ds.study.iitm.ac.in">21f005170@ds.study.iitm.ac.in</a></span></div>
-    <hr class="divider">
-    <div class="contact-row"><i class="ti ti-mail"></i><span>Campus Support <a href="mailto:campus-support@study.iitm.ac.in">campus-support@study.iitm.ac.in</a></span></div>
+  <div class="warn-stack">
+      <div class="warn"><i class="ti ti-alert-triangle" aria-hidden="true"></i><span>Quiz 2 <strong>will be Fully objective</strong>.</span></div>
+      <div class="warn"><i class="ti ti-alert-triangle" aria-hidden="true"></i><span>Final End Term Exam <strong>will be mix of Pen and paper and MCQ/MSQ</strong> Questions.</span></div>
   </div>
+</section>
+
+  <!-- RESOURCES -->
+  <section class="resources">
+    <h2>Recommended tools</h2>
+    <div class="info-box">Free versions are sufficient for all tools. Only Jira and Mural are mandatory — all others are recommendations.</div>
+    <div class="tools-grid">
+      <a href="https://www.atlassian.com/software/jira" target="_blank"><div class="t-card"><div class="t-icon"><i class="ti ti-brand-trello" aria-hidden="true"></i></div><div><div class="t-name">Jira</div><div class="t-sub">Sprint mgmt <span class="t-req">· Mandatory</span></div></div></div></a>
+      <a href="https://www.mural.co" target="_blank"><div class="t-card"><div class="t-icon"><i class="ti ti-layout-kanban" aria-hidden="true"></i></div><div><div class="t-name">Mural</div><div class="t-sub">Empathy maps<span class="t-req">· Mandatory</span></div></div></div></a>
+      <a href="https://www.figma.com" target="_blank"><div class="t-card"><div class="t-icon"><i class="ti ti-vector-triangle" aria-hidden="true"></i></div><div><div class="t-name">Figma</div><div class="t-sub">UX & prototyping</div></div></div></a>
+      <a href="https://www.framer.com" target="_blank"><div class="t-card"><div class="t-icon"><i class="ti ti-world" aria-hidden="true"></i></div><div><div class="t-name">Framer</div><div class="t-sub">No-code builder</div></div></div></a>
+      <a href="https://slides.google.com" target="_blank"><div class="t-card"><div class="t-icon"><i class="ti ti-presentation" aria-hidden="true"></i></div><div><div class="t-name">Google Slides</div><div class="t-sub">Presentations</div></div></div></a>
+      <a href="https://www.canva.com" target="_blank"><div class="t-card"><div class="t-icon"><i class="ti ti-palette" aria-hidden="true"></i></div><div><div class="t-name">Canva</div><div class="t-sub">Design canvas</div></div></div></a>
+      <a href="https://dribbble.com" target="_blank"><div class="t-card"><div class="t-icon"><i class="ti ti-rocket" aria-hidden="true"></i></div><div><div class="t-name">Dribbble</div><div class="t-sub">Design inspiration</div></div></div></a>
+    </div>
+  </section>
+
 </div>
