@@ -86,7 +86,7 @@ section.active{display:block}
 .resource-panel-count{font-size:10px;color:#9ca3af;margin-left:auto;flex-shrink:0;white-space:nowrap}
 
 .doc-container{display:flex;flex-direction:row;gap:1.75rem}
-.doc-checklist{width:60%;max-width:600px}
-.doc-checklist .content{width:60%}
+.doc-checklist{width:85%;}
+.doc-checklist.content{width:60%; max-width:600px}
 .doc-content{display:none}
-.doc-content .content{flex:1; background-color: #1d4ed8;}
+.doc-content.content{display:block; background-color: #1d4ed8;width:40%;}

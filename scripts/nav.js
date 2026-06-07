@@ -75,9 +75,24 @@ function milestoneClickHandler(e) {
         }
 }
 
+function deliverableClickHandler(e) {
+    const docChecklists = document.getElementsByClassName('doc-checklist')
+    const docContentBox = document.getElementsByClassName('doc-content')[0]
+    const element = e.target.classList.contains('cTrue');
+
+        if (element) {  
+            console.log('Deliverable clicked');
+                for (let checklist of docChecklists) {
+                    console.log('Toggling checklist visibility');
+                    checklist.classList.toggle('content');}
+            docContentBox.classList.toggle('content');
+        }  
+
+}
 
 document.addEventListener('click', (e) => {
     milestoneClickHandler(e)
+    deliverableClickHandler(e)
 });
 
 loadHomeContent()

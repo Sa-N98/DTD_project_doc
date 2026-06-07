@@ -1,97 +1,123 @@
-<style>
-:root{--pg-orange:#F58D26;--pg-orange-light:#fff7ee;--pg-orange-mid:#ffe8cc;--pg-orange-dark:#c0620d;--pg-text-primary:#111827;--pg-text-secondary:#191b20;--pg-text-tertiary:#5f646d;--pg-border:#e5e7eb;--pg-border-light:#f3f4f6;--pg-bg:#ffffff;--pg-bg-soft:#f9fafb;--pg-radius:12px;--pg-radius-sm:8px;--pg-shadow:0 1px 3px rgba(0,0,0,0.06),0 4px 16px rgba(0,0,0,0.04)}
-*{box-sizing:border-box;margin:0;padding:0}
-a{text-decoration:none;color:inherit}
-.page{padding:2rem 2rem 3rem;font-family:'Segoe UI',system-ui,sans-serif;color:var(--pg-text-primary);max-width:860px}
-.hero-section{margin-bottom:1.75rem}
-.hero-tags{display:flex;align-items:center;gap:8px;margin-bottom:6px}
-.course-tag{font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--pg-orange-dark);background:var(--pg-orange-light);border:1px solid var(--pg-orange-mid);border-radius:999px;padding:2px 10px}
-.term-tag{font-size:11px;color:var(--pg-text-tertiary);background:var(--pg-bg-secondary);border:1px solid var(--pg-border-light);border-radius:999px;padding:2px 10px}
-.hero-title{font-size:3rem;font-weight:700;color:var(--pg-text-primary);line-height:1.15;margin:0 0 6px}
-.description{font-size:14px;color:var(--pg-text-secondary);line-height:1.5;max-width:600px}
-.hero-pills{display:flex;gap:0.7rem;margin-top:12px;flex-wrap:wrap}
-.h-pill{display:flex;align-items:center;gap:5px;font-size:12px;color:var(--pg-text-secondary);background:var(--pg-bg-soft);border:1px solid var(--pg-border);border-radius:999px;padding:3px 12px}
-.h-pill i{font-size:13px;color:var(--pg-orange)}
-.h-pill strong{color:var(--pg-text-primary);font-weight:500}
-.sec-label{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#ff6447;margin-bottom:.75rem}
-.info-box{background:var(--pg-bg-soft);border:1px solid var(--pg-border);border-radius:var(--pg-radius-sm);padding:.75rem 1rem;font-size:14px;color:var(--pg-text-secondary);line-height:1.6;margin-bottom:1rem; margin-top:1rem}
-.steps-grid, .grade-grid, .tools-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:.75rem;margin-bottom:1.25rem}
-.step-card, .g-card, .t-card{border:1px solid var(--pg-border);border-radius:var(--pg-radius);padding:1rem;background:var(--pg-bg);transition:box-shadow .15s,border-color .15s;display:block;cursor:pointer}
-.step-card:hover, .g-card:hover, .t-card:hover{box-shadow:var(--pg-shadow);border-color:var(--pg-orange)}
-.step-icon, .t-icon{width:34px;height:34px;border-radius:9px;background:var(--pg-orange-light);border:1px solid var(--pg-orange-mid);display:flex;align-items:center;justify-content:center;margin-bottom:.65rem}
-.step-icon i, .t-icon i{font-size:16px;color:var(--pg-orange)}
-.step-title, .t-name{font-size:13px;font-weight:600;color:var(--pg-text-primary);margin-bottom:2px}
-.step-desc, .g-label, .t-sub, .g-note{font-size:11px;color:var(--pg-text-tertiary)}
-.warn{display:flex;gap:10px;align-items:flex-start;background:#fffbeb;border:1px solid #fde68a;border-radius:var(--pg-radius-sm);padding:.75rem 1rem;font-size:13px;color:#92400e;line-height:1.55;margin-bottom:1rem}
-.warn i{font-size:15px;color:#f59e0b;margin-top:1px;flex-shrink:0}
-nav{
-    display:flex;
-    gap:.5rem;
-    margin-bottom:1.5rem;
-    border-bottom:1px solid var(--pg-border);
-    padding-bottom:.75rem;
-}
+<div class="page" id="ms2-page">
+  <div class="hero-section">
+    <div class="hero-tags">
+      <span class="page-tag-primary">Milestone 2</span>
+      <span class="page-tag-secondary">Weeks 4–6</span>
+    </div>
+    <div class="hero-title">Analyze &amp;<br><span style="color:#ff6447;">Solve Phase</span></div>
+    <div class="description">Dig into root causes, bulletproof your concept with peer feedback, and brainstorm + wireframe your solution.</div>
+    <div class="hero-pills">
+      <div class="h-pill"><i class="ti ti-calendar" aria-hidden="true"></i><span>Weeks <strong>4–6</strong></span></div>
+      <div class="h-pill"><i class="ti ti-award" aria-hidden="true"></i><span>Total: <strong>25 marks</strong></span></div>
+      <div class="h-pill"><i class="ti ti-users" aria-hidden="true"></i><span>Scope: <strong>Team + Individual</strong></span></div>
+    </div>
+  </div>
 
-.nav-btn{
-    border:1px solid transparent;
-    background:transparent;
-    color:var(--pg-text-secondary);
-    font-size:13px;
-    font-weight:500;
-    padding:.5rem .9rem;
-    border-radius:999px;
-    cursor:pointer;
-    transition:all .15s ease;
-}
+  <!-- DELIVERABLE 1 — Canvas 2 -->
+  <section class="active">
+    <div class="ter-label">Deliverable 1 — Canvas 2</div>
 
-.nav-btn:hover{
-    background:var(--pg-orange-light);
-    color:var(--pg-orange-dark);
-}
+    <!-- Canvas 2a -->
+    <div class="check-box">
+      <div class="main-task open">
+        <div class="task-toggle" onclick="this.closest('.main-task').classList.toggle('open')"></div>
+        <label><input type="checkbox" id="ms2-task1a"> Canvas 2 — Analyze Phase</label>
+        <div class="scope-pill individual">Individual</div>
+        <div class="marks-pill">8 marks</div>
+      </div>
+      <div class="sub-task">
+        <div class="sub-task-item"><input type="checkbox" id="ms2-1-1"><span>Pick <strong>2n problems</strong> from your list and analyze each using the <strong>Multi-why technique</strong> to explore root causes.<span class="inline-pill individual">3 marks · Individual</span></span></div>
+        <div class="sub-task-item"><input type="checkbox" id="ms2-1-2"><span>Create <strong>2n conflicts of interest</strong> for each problem and define the desired results.<span class="inline-pill individual">3 marks · Individual</span></span></div>
+        <div class="sub-task-item"><input type="checkbox" id="ms2-1-3"><span>Generate <strong>2–3 How Might We (HMW)</strong> questions based on your analysis.<span class="inline-pill individual">2 marks · Individual</span></span></div>
+      </div>
+      <div class="resource-panel">
+        <span class="resource-panel-label">Resources</span>
+        <div class="resource-panel-links">
+          <a href="#" target="_blank" class="resource-link"><i class="ti ti-external-link"></i> Mural Canvas 2</a>
+          <a href="#" target="_blank" class="resource-link"><i class="ti ti-brand-youtube"></i> Multi-why Tutorial</a>
+          <a href="#" target="_blank" class="resource-link"><i class="ti ti-file-text"></i> HMW Guide</a>
+        </div>
+        <span class="resource-panel-count">3 resources</span>
+      </div>
+    </div>
 
-.nav-btn.active{
-    background:var(--pg-orange-light);
-    border-color:var(--pg-orange-mid);
-    color:var(--pg-orange-dark);
-}
+    <!-- Canvas 2b — Marketing -->
+    <div class="check-box">
+      <div class="main-task open">
+        <div class="task-toggle" onclick="this.closest('.main-task').classList.toggle('open')"></div>
+        <label><input type="checkbox" id="ms2-task1b"> Canvas 2 — Marketing Features</label>
+        <div class="scope-pill">Team</div>
+        <div class="marks-pill">3 marks</div>
+      </div>
+      <div class="sub-task">
+        <div class="sub-task-item"><input type="checkbox" id="ms2-1-4"><span>Define the <strong>app title</strong> and developer's name.</span></div>
+        <div class="sub-task-item"><input type="checkbox" id="ms2-1-5"><span>Design an <strong>app icon</strong>.</span></div>
+        <div class="sub-task-item"><input type="checkbox" id="ms2-1-6"><span>List the <strong>app features and category</strong>.</span></div>
+        <div class="sub-task-item"><input type="checkbox" id="ms2-1-7"><span>Write a <strong>short description</strong> of the app including relevant keywords.<span class="inline-pill team">2 marks · Team</span></span></div>
+        <div class="sub-task-item"><input type="checkbox" id="ms2-1-8"><span>Update <strong>Jira</strong> integrated with Mural to track your project progress.<span class="inline-pill team">1 mark · Team</span></span></div>
+      </div>
+    </div>
+  </section>
 
-.step-num{
-    font-size:11px;
-    font-weight:600;
-    text-transform:uppercase;
-    letter-spacing:.06em;
-    color:var(--pg-orange);
-    margin-bottom:.25rem;
-}
+  <!-- DELIVERABLE 2 — Bulletproof -->
+  <section class="active">
+    <div class="ter-label">Deliverable 2 — Bulletproof Your Concept</div>
+    <div class="check-box">
+      <div class="main-task open">
+        <div class="task-toggle" onclick="this.closest('.main-task').classList.toggle('open')"></div>
+        <label><input type="checkbox" id="ms2-task2"> Ritual Dissent Videos</label>
+        <div class="scope-pill mixed">Team + Individual</div>
+        <div class="marks-pill">5 marks</div>
+      </div>
+      <div class="sub-task">
+        <div class="sub-task-item"><input type="checkbox" id="ms2-2-1"><span><strong>RD1 — Presenter</strong> delivers a <strong>3-minute presentation</strong> covering problem statement, Empathize findings, and HMWs to another team. Only the presenter speaks.</span></div>
+        <div class="sub-task-item"><input type="checkbox" id="ms2-2-2"><span><strong>RD1 — Dissenters</strong> give <strong>negative-only feedback</strong> for 8 minutes. Presenter listens and records — no refuting.</span></div>
+        <div class="sub-task-item"><input type="checkbox" id="ms2-2-3"><span>Team reviews all dissent feedback and decides what to act on. <strong>Rework</strong> Empathize and Analyze sections as needed. Do not start Solve phase yet.</span></div>
+        <div class="sub-task-item"><input type="checkbox" id="ms2-2-4"><span><strong>RD2 — A different member</strong> presents updated work (Empathize + Analyze + Solve) to a third team and collects feedback.</span></div>
+        <div class="sub-task-item"><input type="checkbox" id="ms2-2-5"><span>Keep <strong>camera on</strong> and display <strong>name and roll number</strong> throughout both RD sessions. Audio must be clear.</span></div>
+      </div>
+      <div class="resource-panel">
+        <span class="resource-panel-label">Resources</span>
+        <div class="resource-panel-links">
+          <a href="#" target="_blank" class="resource-link"><i class="ti ti-brand-youtube"></i> RD Sample Video</a>
+        </div>
+        <span class="resource-panel-count">1 resources</span>
+      </div>
+    </div>
+    <div class="info-box">
+      <strong>Allocation is done by the instructor.</strong> RD1 total duration: 3 min presentation + 8 min dissent = ~16 minutes. Same format for RD2. Dissenters must keep cameras on when giving feedback.
+    </div>
+    <div class="warn">
+      <i class="ti ti-alert-triangle"></i>
+      <span>You needn't fix everything from the dissent feedback — but you must <strong>discuss every point</strong> with your team and decide whether to act on it.</span>
+    </div>
+  </section>
 
-.warn-stack{
-    display:flex;
-    flex-direction:column;
-}
+  <!-- DELIVERABLE 3 — Canvas 3 -->
+  <section class="active">
+    <div class="ter-label">Deliverable 3 — Canvas 3 &amp; Wireframes</div>
 
-.g-card{
-    text-align:center;
-}
+    <div class="check-box">
+      <div class="main-task open">
+        <div class="task-toggle" onclick="this.closest('.main-task').classList.toggle('open')"></div>
+        <label><input type="checkbox" id="ms2-task3"> Canvas 3 — Brainstorming &amp; Wireframes</label>
+        <div class="scope-pill mixed">Team + Individual</div>
+        <div class="marks-pill">7 marks</div>
+      </div>
+      <div class="sub-task">
+        <div class="sub-task-item"><input type="checkbox" id="ms2-3-1"><span><strong>Silent brainstorming</strong> — each member generates ideas individually on Canvas 3.<span class="inline-pill individual">Individual</span></span></div>
+        <div class="sub-task-item"><input type="checkbox" id="ms2-3-2"><span><strong>Group brainstorming</strong> — combine and build on individual ideas as a team on Canvas 3.<span class="inline-pill team">Team</span><span class="inline-pill">2 marks combined</span></span></div>
+        <div class="sub-task-item"><input type="checkbox" id="ms2-3-3"><span>Submit a <strong>video/screen recording</strong> of both the individual and group brainstorming sessions (Canvas 3 activity).<span class="inline-pill team">2 marks · Team</span></span></div>
+        <div class="sub-task-item"><input type="checkbox" id="ms2-3-4"><span>Develop <strong>wireframes</strong> of the prototype using Figma or any other toolkit. A functional app is <strong>not</strong> required at this stage.<span class="inline-pill team">3 marks · Team</span></span></div>
+      </div>
+      <div class="resource-panel">
+        <span class="resource-panel-label">Resources</span>
+        <div class="resource-panel-links">
+          <a href="#" target="_blank" class="resource-link"><i class="ti ti-external-link"></i> Mural Canvas 3 Example</a>
+        </div>
+        <span class="resource-panel-count">1 resource</span>
+      </div>
+    </div>
+  </section>
 
-.g-pct{
-    font-size:1.75rem;
-    line-height:1;
-    font-weight:700;
-    color:var(--pg-orange);
-    margin-bottom:.5rem;
-}
-
-.t-req{
-    color:var(--pg-orange-dark);
-    font-weight:600;
-}
-section{margin-bottom:1.75rem}
-section {display: none;}
-section.active {display: block;}
-</style>
-
-
-<div class="page milestone-2">
-    <h1>Milestone 2: System design</h1>
-    <p >In this milestone, you will submit a detailed system design document that describes the architecture of your proposed solution, including the components, their interactions, and the technologies you will use. This will help us evaluate the feasibility of your design and provide feedback before you start implementation.</p>      
 </div>

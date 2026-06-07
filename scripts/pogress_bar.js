@@ -14,8 +14,10 @@ function updateTimeline(today) {
         if (el.dataset.date <= today) {
             el.style.backgroundColor = '#ff6347';
             el.querySelectorAll('span').forEach(span => {
-                span.style.color = '#F58D26';
-                span.style.fontWeight = 'bold';
+                span.style.color = '#ff6447';
+                el.querySelectorAll('span.label-milestone').forEach(span => {
+                    span.style.fontWeight = 'bold';
+                });
             });
         }
     });
