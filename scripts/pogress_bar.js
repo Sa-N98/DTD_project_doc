@@ -49,4 +49,4 @@ const animate = (speed) => {
 };
 
 // Usage: animate(5) -> updates every 200ms
-animate(4)
+// animate(4)
