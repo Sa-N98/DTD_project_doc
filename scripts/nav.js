@@ -95,4 +95,6 @@ document.addEventListener('click', (e) => {
     deliverableClickHandler(e)
 });
 
+window.loadHomeContent = loadHomeContent;
+
 loadHomeContent()
