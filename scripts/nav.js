@@ -28,6 +28,8 @@ function initHomeTabs() {
     });
 }
 
+
+
 async function loadHomeContent() {
     try {
         const response = await fetch(`milestones/home.html`);
@@ -43,10 +45,20 @@ async function loadHomeContent() {
     }
 }
 
-const milestone0 = document.getElementById('Day-1');
-const milestone1 = document.getElementById('milestone-1');
-const milestone2 = document.getElementById('milestone-2');
-const milestone3 = document.getElementById('milestone-3');
+// const milestone0 = document.getElementById('Day-1');
+// const milestone1 = document.getElementById('milestone-1');
+// const milestone2 = document.getElementById('milestone-2');
+// const milestone3 = document.getElementById('milestone-3');
+
+function loadchecklistState() {
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    checkboxes.forEach(checkbox => {
+        const saved = localStorage.getItem(checkbox.id);
+        if (saved === 'true') {
+        checkbox.checked = true;
+        }
+    });
+}
 
 async function loadMilestoneContent(milestoneId) {
     try {
@@ -56,11 +68,13 @@ async function loadMilestoneContent(milestoneId) {
         }
         const html = await response.text();
         mainContent.innerHTML = html;
+        loadchecklistState()
     } catch (error) {
         console.error('Error loading milestone content:', error);
         mainContent.innerHTML = `<p>Error loading content. Please try again later.</p>`;
     }
 }   
+
 
 function milestoneClickHandler(e) {
     const elementId = e.target.id;
@@ -90,11 +104,23 @@ function deliverableClickHandler(e) {
 
 }
 
+function checklistStateManager(e) {
+    // Implementation for managing checklist states
+    const element = e.target.type;
+        if (element === 'checkbox') {
+            localStorage.setItem(e.target.id, e.target.checked);
+            console.log(`Saved state for ${e.target.id}: ${e.target.checked}`);
+        }
+}
+
+
 document.addEventListener('click', (e) => {
     milestoneClickHandler(e)
     deliverableClickHandler(e)
+    checklistStateManager(e)
 });
 
 window.loadHomeContent = loadHomeContent;
 
 loadHomeContent()
+
